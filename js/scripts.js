@@ -29,18 +29,22 @@ $(document).ready(function() {
     if (celebrity === "jb") {
       $("#output").show();
       $("#answer").text("Justin Beiber");
+      $(".pic").hide();
       $("#j").show();
     } else if (celebrity === "Zendaya") {
       $("#output").show();
       $("#answer").text("Zendaya");
+      $(".pic").hide();
       $("#z").show();
     } else if (celebrity === "Kanye") {
       $("#output").show();
       $("#answer").text("Kanye");
+      $(".pic").hide();
       $("#kanye").show();
     } else {
       $("#output").show();
       $("#answer").text("Kim Kardashian");
+      $(".pic").hide();
       $("#kim").show();
     }
   });
