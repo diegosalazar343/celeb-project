@@ -1,3 +1,4 @@
+//Business Logic
 function results(input1, input2, input3, input4, input5) {
   const total = input1 + input2 + input3 + input4 + input5;
 
@@ -10,8 +11,10 @@ function results(input1, input2, input3, input4, input5) {
   } else {
     celebrity = "Kim K";
   }
+  return celebrity;
 }
 
+//User Logic
 $(document).ready(function() {
   $("form#celeb").submit(function() {
     event.preventDefault();
@@ -23,6 +26,22 @@ $(document).ready(function() {
     const season = parseInt($("#season").val());
     let celebrity = results(color, food, vacation, friday, season);
 
-
+    if (celebrity === "jb") {
+      $("#output").show();
+      $("#answer").text("Justin Beiber");
+      $("#j").show();
+    } else if (celebrity === "Zendaya") {
+      $("#output").show();
+      $("#answer").text("Zendaya");
+      $("#z").show();
+    } else if (celebrity === "Kanye") {
+      $("#output").show();
+      $("#answer").text("Kanye");
+      $("#kanye").show();
+    } else {
+      $("#output").show();
+      $("#answer").text("Kim Kardashian");
+      $("#kim").show();
+    }
   });
 });
